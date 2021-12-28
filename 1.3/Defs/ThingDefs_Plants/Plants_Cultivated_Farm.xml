@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<!--=========================== Food crops ==============================-->
+
+
+	
+
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Peanut</defName>
+		<label>peanut plant</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Peanut</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>VCE_RawPeanut</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_PeanutImmature</immatureGraphicPath>
+			<harvestYield>11</harvestYield>
+			<harvestWork>300</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.6</growDays>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Sorghum</defName>
+		<label>sorghum plant</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Sorghum</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>9</maxMeshCount>
+			<harvestedThingDef>VCE_RawSorghum</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_SorghumImmature</immatureGraphicPath>
+			<harvestYield>11</harvestYield>
+			<harvestWork>300</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.6</growDays>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>1~2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Canola</defName>
+		<label>canola plant</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Canola</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawCanola</harvestedThingDef>
+			<harvestYield>19</harvestYield>
+			<harvestWork>300</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+			<harvestFailable>false</harvestFailable>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>10.4</growDays>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_CanolaImmature</immatureGraphicPath>
+			<visualSizeRange>0.5~1.5</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Sunflower</defName>
+		<label>sunflower plant</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Sunflower</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawSunflower</harvestedThingDef>
+			<harvestYield>19</harvestYield>
+			<harvestWork>300</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+			<harvestFailable>false</harvestFailable>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>10.4</growDays>
+			
+			<visualSizeRange>0.5~1.5</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+
+	
+
+
+
+
+</Defs>
