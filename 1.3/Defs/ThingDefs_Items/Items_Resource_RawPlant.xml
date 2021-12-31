@@ -28,7 +28,7 @@
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>    
 	</ThingDef>
-	
+
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawCanola</defName>
 		<label>canola flowers</label>
@@ -55,7 +55,7 @@
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>    
 	</ThingDef>
-	
+
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawSunflower</defName>
 		<label>sunflower seeds</label>
@@ -83,7 +83,7 @@
 		</ingestible>    
 	</ThingDef>
 
-<ThingDef ParentName="PlantFoodRawBase">
+	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawSorghum</defName>
 		<label>shorghum</label>
 		<description>.</description>
@@ -108,6 +108,69 @@
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>    
+	</ThingDef>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawTaro</defName>
+		<label>taro roots</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Taro</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawButternutSquash</defName>
+		<label>butternut squashes</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_ButternutSquash</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawBeans</defName>
+		<label>green beans</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Beans</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
 	</ThingDef>
 
 
