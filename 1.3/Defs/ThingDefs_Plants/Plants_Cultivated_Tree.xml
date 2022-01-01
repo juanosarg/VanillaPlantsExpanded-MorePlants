@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!--=========================== Tree crops ==============================-->
+
+
+	<ThingDef ParentName="TreeBase">
+		<defName>VCE_AvocadoTree</defName>
+		<label>avocado tree</label>
+		<description>Long to mature.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/VCE_TreeAvocado</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>90</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowMinSkill>6</sowMinSkill>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>1</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<immatureGraphicPath>Things/Plant/Trees/VCE_TreeAvocadoImmature</immatureGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>175</harvestYield>
+			<harvestedThingDef>VCE_RawAvocado</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+
+
+
+
+
+</Defs>

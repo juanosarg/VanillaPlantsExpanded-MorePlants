@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawAvocado</defName>
+		<label>avocados</label>
+		<description>.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Avocados</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+
+
+
+
+</Defs>

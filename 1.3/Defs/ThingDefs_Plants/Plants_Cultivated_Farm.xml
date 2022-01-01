@@ -1,10 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	
+
 	<!--=========================== Food crops ==============================-->
 
 
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Celery</defName>
+		<label>celery plant</label>
+		<description>Long cultivation.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Celery</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawCelery</harvestedThingDef>
+			<harvestYield>50</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>30</growDays>			
+			<visualSizeRange>0.3~1.4</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Radish</defName>
+		<label>radish plant</label>
+		<description>Very short cultivation.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Radish</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawRadish</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<sowWork>250</sowWork>
+			<maxMeshCount>4</maxMeshCount>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>2.1</growDays>			
+			<visualSizeRange>0.3~0.9</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	  <ThingDef ParentName="PlantBase">
+   <defName>VCE_Buckwheat</defName>
+		<label>buckwheat plant</label>
+		<description>Non flammable.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.175</Nutrition>
+	   <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Crops/VCE_Buckwheat</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+	  <immatureGraphicPath>Things/Plant/Crops/VCE_BuckwheatImmature</immatureGraphicPath>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>VCE_RawBuckwheat</harvestedThingDef>
+      <harvestYield>9</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5</growDays>
+      <visualSizeRange>0.5~1.5</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+	
 	
 
 	<ThingDef ParentName="PlantBase">
@@ -45,7 +150,7 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Sorghum</defName>
 		<label>sorghum plant</label>
@@ -123,7 +228,7 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Sunflower</defName>
 		<label>sunflower plant</label>
@@ -155,121 +260,121 @@
 			<harvestFailable>false</harvestFailable>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>10.4</growDays>
-			
+
 			<visualSizeRange>0.5~1.5</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-	
-	 <ThingDef ParentName="PlantBase">
-    <defName>VCE_Taro</defName>
-    <label>taro plant</label>
-    <description>.</description>
-    <statBases>
-      <MaxHitPoints>85</MaxHitPoints>
-      <Nutrition>0.25</Nutrition>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Plant/Crops/VCE_Taro</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-    <selectable>true</selectable>
-    <pathCost>80</pathCost>
-    <ingestible />
-    <plant>
-      <fertilitySensitivity>0</fertilitySensitivity>
-      <dieIfLeafless>true</dieIfLeafless>
-      <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>VCE_RawTaro</harvestedThingDef>
-      <harvestYield>11</harvestYield>
-	  <fertilityMin>0</fertilityMin>
-      <sowTags>
-      
-        <li>VCE_Aquatic</li>
-      </sowTags>
-      <topWindExposure>0.1</topWindExposure>
-      <growDays>5.8</growDays>
-      <visualSizeRange>0.3~1.05</visualSizeRange>
-      <wildOrder>2</wildOrder>
-      <purpose>Food</purpose>
-      <humanFoodPlant>true</humanFoodPlant>
-    </plant>
-  </ThingDef>
-  
-  	 <ThingDef ParentName="PlantBase">
-    <defName>VCE_ButternutSquash</defName>
-    <label>butternut squah plant</label>
-    <description>.</description>
-    <statBases>
-      <MaxHitPoints>85</MaxHitPoints>
-      <Nutrition>0.25</Nutrition>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Plant/Crops/VCE_ButternutSquash</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-    <selectable>true</selectable>
-    <pathCost>30</pathCost>
-    <ingestible />
-    <plant>
-      <fertilitySensitivity>0</fertilitySensitivity>
-      <dieIfLeafless>true</dieIfLeafless>
-      <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>VCE_RawButternutSquash</harvestedThingDef>
-       <immatureGraphicPath>Things/Plant/Crops/VCE_ButternutSquashImmature</immatureGraphicPath>
 
-      <harvestYield>11</harvestYield>
-	  <fertilityMin>0</fertilityMin>
-      <sowTags>
-      
-        <li>VCE_Sandy</li>
-      </sowTags>
-      <topWindExposure>0.1</topWindExposure>
-      <growDays>5.8</growDays>
-      <visualSizeRange>0.3~1.05</visualSizeRange>
-      <wildOrder>2</wildOrder>
-      <purpose>Food</purpose>
-      <humanFoodPlant>true</humanFoodPlant>
-    </plant>
-  </ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Taro</defName>
+		<label>taro plant</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Taro</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>80</pathCost>
+		<ingestible />
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawTaro</harvestedThingDef>
+			<harvestYield>11</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			<sowTags>
 
-<ThingDef ParentName="PlantBase">
-    <defName>VCE_Beans</defName>
-    <label>green bean plant</label>
-    <description>.</description>
-    <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Nutrition>0.4</Nutrition>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Plant/Crops/VCE_Beans</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-    <selectable>true</selectable>
-    <pathCost>14</pathCost>
-    <ingestible />
-    <plant>
-      <fertilityMin>0</fertilityMin>
-	  <fertilitySensitivity>0</fertilitySensitivity>
-      <dieIfLeafless>true</dieIfLeafless>
-      <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>VCE_RawBeans</harvestedThingDef>
-      <harvestYield>22</harvestYield>
-      <sowTags>
-        <li>VCE_Sandy</li>
-      </sowTags>
-      <topWindExposure>0.1</topWindExposure>
-      <growDays>11.3</growDays>
-      <immatureGraphicPath>Things/Plant/Crops/VCE_BeansImmature</immatureGraphicPath>
-      <visualSizeRange>0.3~1</visualSizeRange>
-      <wildOrder>2</wildOrder>
-      <purpose>Food</purpose>
-      <humanFoodPlant>true</humanFoodPlant>
-    </plant>
-  </ThingDef>
-	
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.8</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_ButternutSquash</defName>
+		<label>butternut squah plant</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_ButternutSquash</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawButternutSquash</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_ButternutSquashImmature</immatureGraphicPath>
+
+			<harvestYield>11</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			<sowTags>
+
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.8</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Beans</defName>
+		<label>green bean plant</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Beans</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawBeans</harvestedThingDef>
+			<harvestYield>22</harvestYield>
+			<sowTags>
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>11.3</growDays>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BeansImmature</immatureGraphicPath>
+			<visualSizeRange>0.3~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+
 
 
 
