@@ -95,9 +95,7 @@
 				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
-			<li Class="VanillaPlantsExpandedMorePlants.CompProperties_NoTransport">
-				
-			</li>
+			
 		</comps>
 
 		<ingestible>
