@@ -8,7 +8,7 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>VCE_AvocadoTree</defName>
 		<label>avocado tree</label>
-		<description>Long to mature.</description>
+		<description>An evergreen tree with thick, leathery leaves that produces perfect white, ivory to yellow flowers. The fruit has a large seed or pit in the center and may be green or nearly black.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Avocado trees take a notoriously long period to mature and produce their fruits. If they can be kept alive all that time, they produce greater yield than other fruit trees. Plus if you install the Coffees and Teas mod and pair them with Pumpkin Spice Coffee you can have your dream RimWorld Hipster experience!</description>
 		<graphicData>
 			<texPath>Things/Plant/Trees/VCE_TreeAvocado</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

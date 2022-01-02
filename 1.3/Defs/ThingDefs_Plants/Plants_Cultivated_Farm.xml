@@ -1,14 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
 	<!--=========================== Food crops ==============================-->
-
-
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Celery</defName>
 		<label>celery plant</label>
-		<description>Long cultivation.</description>
+		<description>A vegetable consisting of a long fibrous stalk tapering into leaves. The leaves are strongly flavored and are used less often, either as a flavoring in soups and stews or as a dried herb. Celery is a staple in many soups.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Celery has a very long growth period (almost a full year!). If it can be kept alive all that time, it produces greater yield than corn.</description>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Nutrition>0.15</Nutrition>
@@ -19,29 +15,28 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>14</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilityMin>1</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VCE_RawCelery</harvestedThingDef>
-			<harvestYield>50</harvestYield>
+			<harvestYield>62</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>30</growDays>			
+			<growDays>29.5</growDays>
 			<visualSizeRange>0.3~1.4</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-	
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Radish</defName>
 		<label>radish plant</label>
-		<description>Very short cultivation.</description>
+		<description>An edible root vegetable that is very easy to grow and quick to harvest. Radishes are often planted by novice gardeners.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This genetically modified radish has a very short growth period (less than 2 days). This means it is an effective crop if you need small amounts of food FAST, and the sowing and harvesting work will be the most important factor.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.1</Nutrition>
@@ -52,66 +47,62 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>14</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilityMin>0.70</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VCE_RawRadish</harvestedThingDef>
 			<harvestYield>3</harvestYield>
-			<sowWork>250</sowWork>
+			<sowWork>340</sowWork>
 			<maxMeshCount>4</maxMeshCount>
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>2.1</growDays>			
+			<growDays>1.55</growDays>
 			<visualSizeRange>0.3~0.9</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-	
-	  <ThingDef ParentName="PlantBase">
-   <defName>VCE_Buckwheat</defName>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Buckwheat</defName>
 		<label>buckwheat plant</label>
-		<description>Non flammable.</description>
-    <statBases>
-      <MaxHitPoints>85</MaxHitPoints>
-      <Nutrition>0.175</Nutrition>
-	   <Flammability>0</Flammability>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Plant/Crops/VCE_Buckwheat</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-    <selectable>true</selectable>
-    <pathCost>14</pathCost>
-    <ingestible />
-    <plant>
-      <dieIfLeafless>true</dieIfLeafless>
-	  <immatureGraphicPath>Things/Plant/Crops/VCE_BuckwheatImmature</immatureGraphicPath>
-      <maxMeshCount>4</maxMeshCount>
-      <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>VCE_RawBuckwheat</harvestedThingDef>
-      <harvestYield>9</harvestYield>
-      <sowTags>
-        <li>Ground</li>
-        <li>Hydroponic</li>
-      </sowTags>
-      <topWindExposure>0.1</topWindExposure>
-      <growDays>5</growDays>
-      <visualSizeRange>0.5~1.5</visualSizeRange>
-      <wildOrder>2</wildOrder>
-      <purpose>Food</purpose>
-      <humanFoodPlant>true</humanFoodPlant>
-    </plant>
-  </ThingDef>
-	
-	
-
+		<description>A pseudocereal cultivated for its grain-like seeds. Its white flowers are produced in terminal clusters and after pòllination turn into triangular-shaped seeds that are enclosed by a tough dark brown or gray rind.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Buckwheat is very resistant to fire, and this variety has been modified to be completely non-flammable.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.175</Nutrition>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Buckwheat</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BuckwheatImmature</immatureGraphicPath>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawBuckwheat</harvestedThingDef>
+			<harvestYield>9</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5</growDays>
+			<visualSizeRange>0.5~1.5</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Peanut</defName>
 		<label>peanut plant</label>
@@ -126,7 +117,7 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>10</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilityMin>0.70</fertilityMin>
 			<fertilitySensitivity>1</fertilitySensitivity>
@@ -150,7 +141,6 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Sorghum</defName>
 		<label>sorghum plant</label>
@@ -165,7 +155,7 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>10</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilityMin>0.70</fertilityMin>
 			<fertilitySensitivity>1</fertilitySensitivity>
@@ -189,46 +179,7 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="PlantBase">
-		<defName>VCE_Canola</defName>
-		<label>canola plant</label>
-		<description>.</description>
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Nutrition>0.4</Nutrition>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Crops/VCE_Canola</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<selectable>true</selectable>
-		<pathCost>30</pathCost>
-		<ingestible />
-		<plant>
-			<fertilityMin>0.70</fertilityMin>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
-			<dieIfLeafless>true</dieIfLeafless>
-			<harvestTag>Standard</harvestTag>
-			<maxMeshCount>1</maxMeshCount>
-			<harvestedThingDef>VCE_RawCanola</harvestedThingDef>
-			<harvestYield>19</harvestYield>
-			<harvestWork>300</harvestWork>
-			<sowTags>
-				<li>Ground</li>
-
-			</sowTags>
-			<harvestFailable>false</harvestFailable>
-			<topWindExposure>0.05</topWindExposure>
-			<growDays>10.4</growDays>
-			<immatureGraphicPath>Things/Plant/Crops/VCE_CanolaImmature</immatureGraphicPath>
-			<visualSizeRange>0.5~1.5</visualSizeRange>
-			<wildOrder>2</wildOrder>
-			<purpose>Food</purpose>
-			<humanFoodPlant>true</humanFoodPlant>
-		</plant>
-	</ThingDef>
-
+	
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Sunflower</defName>
 		<label>sunflower plant</label>
@@ -243,7 +194,7 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>30</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilityMin>0.70</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
@@ -255,19 +206,16 @@
 			<harvestWork>300</harvestWork>
 			<sowTags>
 				<li>Ground</li>
-
 			</sowTags>
 			<harvestFailable>false</harvestFailable>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>10.4</growDays>
-
 			<visualSizeRange>0.5~1.5</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Taro</defName>
 		<label>taro plant</label>
@@ -282,7 +230,7 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>80</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -291,7 +239,6 @@
 			<harvestYield>11</harvestYield>
 			<fertilityMin>0</fertilityMin>
 			<sowTags>
-
 				<li>VCE_Aquatic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
@@ -302,7 +249,6 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_ButternutSquash</defName>
 		<label>butternut squah plant</label>
@@ -317,18 +263,16 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>30</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VCE_RawButternutSquash</harvestedThingDef>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_ButternutSquashImmature</immatureGraphicPath>
-
 			<harvestYield>11</harvestYield>
 			<fertilityMin>0</fertilityMin>
 			<sowTags>
-
 				<li>VCE_Sandy</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
@@ -339,7 +283,6 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Beans</defName>
 		<label>green bean plant</label>
@@ -354,7 +297,7 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>14</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilityMin>0</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
@@ -374,9 +317,4 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-
-
-
-
-
 </Defs>

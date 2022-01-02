@@ -5,7 +5,7 @@
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawCelery</defName>
 		<label>celery</label>
-		<description>.</description>
+		<description>A vegetable consisting of a long fibrous stalk tapering into leaves. The leaves are strongly flavored and are used less often, either as a flavoring in soups and stews or as a dried herb. Celery is a staple in many soups.</description>
 		
 		<graphicData>
 
@@ -30,7 +30,7 @@
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawRadish</defName>
 		<label>radishes</label>
-		<description>.</description>
+		<description>An edible root vegetable that is very easy to grow and quick to harvest. Radishes are often planted by novice gardeners.</description>
 	
 		<graphicData>
 
@@ -55,7 +55,7 @@
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawBuckwheat</defName>
 		<label>buckwheat</label>
-		<description>.</description>
+		<description>A pseudocereal cultivated for its grain-like seeds. Its white flowers are produced in terminal clusters and after pòllination turn into triangular-shaped seeds that are enclosed by a tough dark brown or gray rind.</description>
 	
 		<graphicData>
 
@@ -95,30 +95,8 @@
 				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
-		</comps>
-
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>    
-	</ThingDef>
-
-	<ThingDef ParentName="PlantFoodRawBase">
-		<defName>VCE_RawCanola</defName>
-		<label>canola flowers</label>
-		<description>.</description>
-		
-		<graphicData>
-
-			<texPath>Things/Items/Raw/VCE_CanolaFlowers</texPath>
-
-		</graphicData>
-		<statBases>
-			<MarketValue>1.1</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
+			<li Class="VanillaPlantsExpandedMorePlants.CompProperties_NoTransport">
+				
 			</li>
 		</comps>
 
@@ -126,6 +104,8 @@
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>    
 	</ThingDef>
+
+	
 
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawSunflower</defName>

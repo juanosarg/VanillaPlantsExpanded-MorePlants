@@ -297,6 +297,8 @@
     <Compile Include="AI\Sandy\WorkGiver_GrowerHarvestSandy.cs" />
     <Compile Include="AI\Sandy\WorkGiver_GrowerSandy.cs" />
     <Compile Include="AI\Sandy\WorkGiver_GrowerSowSandy.cs" />
+    <Compile Include="Comps\CompNoTransport.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_NoTransport.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Defs\SandyGrowZoneTerrainsDef.cs" />
     <Compile Include="Defs\AquaticGrowZoneTerrainsDef.cs" />

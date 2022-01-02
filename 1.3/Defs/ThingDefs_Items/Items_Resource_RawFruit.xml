@@ -5,7 +5,7 @@
 	<ThingDef ParentName="VCE_FruitFoodRawBase">
 		<defName>VCE_RawAvocado</defName>
 		<label>avocados</label>
-		<description>.</description>
+		<description>A green or nearly black coloured fruit with a large seed or pit in the center. Avocados have a very mild, creamy texture. Hipsters love them.</description>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>	
 		<thingCategories>
