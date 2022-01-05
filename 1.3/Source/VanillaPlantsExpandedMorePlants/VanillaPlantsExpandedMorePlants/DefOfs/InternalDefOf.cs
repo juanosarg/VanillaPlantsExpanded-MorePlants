@@ -9,6 +9,7 @@ namespace VanillaPlantsExpandedMorePlants
 	{
 		public static ThingDef VCE_Taro;
 		public static ThingDef VCE_ButternutSquash;
+		public static ThingDef VCE_Barley;
 
 
 

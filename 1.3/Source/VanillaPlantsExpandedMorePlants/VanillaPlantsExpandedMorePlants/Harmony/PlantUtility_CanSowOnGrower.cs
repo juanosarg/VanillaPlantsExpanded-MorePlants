@@ -13,7 +13,7 @@ namespace VanillaPlantsExpandedMorePlants
 
     [HarmonyPatch(typeof(PlantUtility))]
     [HarmonyPatch("CanSowOnGrower")]
-    public static class PlantUtility_CanSowOnGrower_Patch
+    public static class VanillaPlantsExpandedMorePlants_PlantUtility_CanSowOnGrower_Patch
     {
         [HarmonyPostfix]
         public static void SowTagsOnAquaticPlants( ThingDef plantDef, object obj, ref bool __result)

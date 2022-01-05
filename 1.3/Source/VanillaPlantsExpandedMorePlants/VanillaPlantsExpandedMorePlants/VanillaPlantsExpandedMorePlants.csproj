@@ -307,6 +307,7 @@
     <Compile Include="Designators\Designator_AquaticGrowingZone.cs" />
     <Compile Include="Designators\Designator_AquaticGrowingZone_Expand.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\Plant_PlantCollected.cs" />
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AI\Aquatic\WorkGiver_GrowerAquatic.cs" />
