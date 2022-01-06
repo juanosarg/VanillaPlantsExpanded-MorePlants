@@ -7,7 +7,8 @@
 	<VCE_SandyGrowingZone>Sand Growing Zone</VCE_SandyGrowingZone>
 	<VCE_SandyGrowingZoneDesc>Create a zone where your colonists will try to grow sandy terrain plants.</VCE_SandyGrowingZoneDesc>
 	
-	
+	<VCE_NotInEquator>Not in equatorial region (in this planet, below {0} latitude). Growing normally.</VCE_NotInEquator>
+	<VCE_InEquator>In equatorial region, growing 30% faster.</VCE_InEquator>
 
 
 

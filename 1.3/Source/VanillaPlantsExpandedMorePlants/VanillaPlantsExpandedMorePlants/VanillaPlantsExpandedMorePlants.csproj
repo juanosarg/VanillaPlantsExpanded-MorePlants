@@ -309,6 +309,8 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\Plant_PlantCollected.cs" />
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
+    <Compile Include="Plants\Plant_FasterInTropics.cs" />
+    <Compile Include="Plants\Plant_SowsAdjacent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AI\Aquatic\WorkGiver_GrowerAquatic.cs" />
     <Compile Include="AI\Aquatic\WorkGiver_GrowerHarvestAquatic.cs" />

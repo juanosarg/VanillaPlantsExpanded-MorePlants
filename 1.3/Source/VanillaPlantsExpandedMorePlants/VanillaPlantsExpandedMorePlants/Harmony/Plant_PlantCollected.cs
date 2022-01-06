@@ -18,14 +18,14 @@ namespace VanillaPlantsExpandedMorePlants
         [HarmonyPostfix]
         public static void AddHayToBarley(Plant __instance, Pawn by)
         {
-            if(__instance.def == InternalDefOf.VCE_Barley)
+            if(__instance.def.defName == "VCE_Barley")
             {
                 
                 float statValue = by.GetStatValue(StatDefOf.PlantHarvestYield);
                 if (!(by.RaceProps.Humanlike && !__instance.Blighted && Rand.Value > statValue))
                 {
 
-                    int num = 15;
+                    int num = 20;
                     if (statValue > 1f)
                     {
                         num = GenMath.RoundRandom((float)num * statValue);
@@ -33,7 +33,7 @@ namespace VanillaPlantsExpandedMorePlants
                     if (num > 0)
                     {
                         Thing thing = ThingMaker.MakeThing(ThingDefOf.Hay);
-
+                        thing.stackCount = num;
                         if (by.Faction != Faction.OfPlayer)
                         {
                             thing.SetForbidden(value: true);

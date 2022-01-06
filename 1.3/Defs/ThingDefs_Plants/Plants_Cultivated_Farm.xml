@@ -104,48 +104,14 @@
 		</plant>
 	</ThingDef>
 	
-	<ThingDef ParentName="PlantBase">
-		<defName>VCE_Barley</defName>
-		<label>barley plant</label>
-		<description>A cereal grain that people can use in bread, beverages, stews, and other dishes. As a whole grain, barley provides fiber, vitamins, and minerals. It has been genetically engineered to gently break into flour with a mere touch.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Barley is a "dual crop", in the sense that it produces both flour and hay.</description>
-		<statBases>
-			<MaxHitPoints>30</MaxHitPoints>
-			<Nutrition>0.18</Nutrition>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Crops/VCE_Barley</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<selectable>true</selectable>
-		<pathCost>40</pathCost>
-		<ingestible />
-		<plant>
-			<fertilityMin>0.7</fertilityMin>
-			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<dieIfLeafless>false</dieIfLeafless>
-			<harvestTag>Standard</harvestTag>
-			<maxMeshCount>4</maxMeshCount>
-			<harvestedThingDef>VCE_Flour</harvestedThingDef>
-			<immatureGraphicPath>Things/Plant/Crops/VCE_BarleyImmature</immatureGraphicPath>
-			<sowMinSkill>7</sowMinSkill>
-			<harvestYield>15</harvestYield>
-			<harvestWork>200</harvestWork>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
-			<topWindExposure>0.2</topWindExposure>
-			<growDays>15</growDays>			
-			<visualSizeRange>0.8~2</visualSizeRange>			
-			<wildOrder>2</wildOrder>
-			<purpose>Food</purpose>
-		</plant>
-	</ThingDef>
+	
 	
 	
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Peanut</defName>
 		<label>peanut plant</label>
-		<description>.</description>
+		<description>A plant that produces seeds with an oblong shape and a papery seed coat. Similar in taste and nutritional profile to tree nuts such as walnuts and almonds, but technically a legume.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This genetically modified variety of peanuts is sown by throwing the seeds haphazardly on the growing zone, and as such the plants will automatically be planted in the adjacent tiles 75% of the time, reducing the total amount of sowing work needed. Useful!</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_SowsAdjacent</thingClass>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
@@ -159,96 +125,59 @@
 		<ingestible/>
 		<plant>
 			<fertilityMin>0.70</fertilityMin>
-			<fertilitySensitivity>1</fertilitySensitivity>
-			<dieIfLeafless>true</dieIfLeafless>
-			<harvestTag>Standard</harvestTag>
-			<maxMeshCount>4</maxMeshCount>
-			<harvestedThingDef>VCE_RawPeanut</harvestedThingDef>
-			<immatureGraphicPath>Things/Plant/Crops/VCE_PeanutImmature</immatureGraphicPath>
-			<harvestYield>11</harvestYield>
-			<harvestWork>300</harvestWork>
-			<sowTags>
-				<li>Ground</li>
-				<li>Hydroponic</li>
-			</sowTags>
-			<topWindExposure>0.1</topWindExposure>
-			<growDays>5.6</growDays>
-			<neverBlightable>true</neverBlightable>
-			<visualSizeRange>0.4~0.8</visualSizeRange>
-			<wildOrder>2</wildOrder>
-			<purpose>Food</purpose>
-			<humanFoodPlant>true</humanFoodPlant>
-		</plant>
-	</ThingDef>
-	<ThingDef ParentName="PlantBase">
-		<defName>VCE_Sorghum</defName>
-		<label>sorghum plant</label>
-		<description>.</description>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.2</Nutrition>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Crops/VCE_Sorghum</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<selectable>true</selectable>
-		<pathCost>10</pathCost>
-		<ingestible/>
-		<plant>
-			<fertilityMin>0.70</fertilityMin>
-			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilitySensitivity>0.50</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>9</maxMeshCount>
-			<harvestedThingDef>VCE_RawSorghum</harvestedThingDef>
-			<immatureGraphicPath>Things/Plant/Crops/VCE_SorghumImmature</immatureGraphicPath>
-			<harvestYield>11</harvestYield>
+			<harvestedThingDef>VCE_RawPeanut</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_PeanutImmature</immatureGraphicPath>
+			<harvestYield>12</harvestYield>
 			<harvestWork>300</harvestWork>
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>5.6</growDays>
-			<neverBlightable>true</neverBlightable>
-			<visualSizeRange>1~2</visualSizeRange>
+			<growDays>6.25</growDays>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
 	
+	
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Sunflower</defName>
 		<label>sunflower plant</label>
-		<description>.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_FasterInTropics</thingClass>
+		<description>A large crop used for its edible oil and edible fruits. The name sunflower may derive from the flower's head's shape, which resembles the sun.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Sunflowers grow 30% faster in equatorial regions. The size of the equatorial region depends on the planet's overall temperature: below 15º for Normal, below 35º for Warm, below 65º for Hot and all the planet for Very Hot. Planets with below Normal temperature are considered to have no equator.</description>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Nutrition>0.4</Nutrition>
+			<MaxHitPoints>35</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Crops/VCE_Sunflower</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
-		<pathCost>30</pathCost>
+		<pathCost>25</pathCost>
 		<ingestible/>
 		<plant>
 			<fertilityMin>0.70</fertilityMin>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<fertilitySensitivity>1.3</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>1</maxMeshCount>
 			<harvestedThingDef>VCE_RawSunflower</harvestedThingDef>
-			<harvestYield>19</harvestYield>
-			<harvestWork>300</harvestWork>
+			<harvestYield>16</harvestYield>
+			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
-			<harvestFailable>false</harvestFailable>
+			
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>10.4</growDays>
+			<growDays>10.5</growDays>
 			<visualSizeRange>0.5~1.5</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
