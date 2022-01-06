@@ -187,17 +187,17 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Taro</defName>
 		<label>taro plant</label>
-		<description>.</description>
+		<description>A tropical plant grown primarily for its edible corm, a root vegetable. Taro is one of the few crops that can be grown under flooded conditions, with the base of the plant always under water. This is due to air spaces in the petiole, which permit underwater gaseous exchange with the atmosphere.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Taro is only growable in aquatic growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Taro is the baseline aquatic plant.</description>
 		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.25</Nutrition>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Crops/VCE_Taro</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
-		<pathCost>80</pathCost>
+		<pathCost>14</pathCost>
 		<ingestible/>
 		<plant>
 			<fertilitySensitivity>0</fertilitySensitivity>
@@ -206,6 +206,8 @@
 			<harvestedThingDef>VCE_RawTaro</harvestedThingDef>
 			<harvestYield>11</harvestYield>
 			<fertilityMin>0</fertilityMin>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
 			<sowTags>
 				<li>VCE_Aquatic</li>
 			</sowTags>
@@ -218,9 +220,196 @@
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Watercress</defName>
+		<label>watercress plant</label>
+		<description>Watercress is a rapidly growing, perennial plant. It is one of the oldest known leaf vegetables consumed by humans. Watercress and many of its relatives are noteworthy for their piquant flavors.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Watercress is only growable in aquatic growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Watercress grows faster than taro but needs a lot of space, blocking sowing in adjacent spaces.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Watercress</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawWatercress</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<growDays>3</growDays>
+			<visualSizeRange>0.3~2.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Lotus</defName>
+		<label>lotus plant</label>
+		<description>Sometimes colloquially called a water lily, lotus plants are adapted to grow in the flood plains of slow-moving rivers and delta areas. Lotus rhizomes have a crunchy texture with sweet-tangy flavours and can be deep-fried, stir-fried, or stuffed with meats or preserved fruits.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Lotus is only growable in aquatic growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Lotus takes a long time to grow.</description>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Lotus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawLotus</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			
+			<sowWork>1000</sowWork>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_LotusImmature</immatureGraphicPath>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<growDays>3</growDays>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_WaterChestnut</defName>
+		<label>water chestnut plant</label>
+		<description>An aquatic vegetable that grows in marshes, under water, in the mud. It has stem-like, tubular green leaves, and small, rounded corms with a crisp, white flesh that may be eaten raw, slightly boiled, or grilled.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Water chestnut is only growable in aquatic growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Water chestnut grows 30% faster in the heat (37-60ºC).</description>
+		<thingClass>VanillaPlantsExpanded.Plant_HighTempAffected</thingClass>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_WaterChestnut</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawWaterChestnut</harvestedThingDef>
+			<harvestYield>9</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6</growDays>
+			<visualSizeRange>0.5~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Melon</defName>
+		<label>melon plant</label>
+		<description>A plant producing a sweet, edible, and fleshy fruit of considerable size. Melons are usually cultivated in warm regions.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Melons are only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Melons need a lot of space, blocking sowing in adjacent spaces, but harvesting them can't fail</description>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Melon</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawMelon</harvestedThingDef>
+			<harvestYield>19</harvestYield>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Sandy</li>
+
+			</sowTags>
+			<harvestFailable>false</harvestFailable>
+			<topWindExposure>0</topWindExposure>
+			<growDays>10.4</growDays>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_MelonImmature</immatureGraphicPath>
+			<visualSizeRange>1~2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Cucumber</defName>
+		<label>cucumber plant</label>
+		<description>A sprawling vine with large leaves and curling tendrils, triangular prickly hairy leaves and yellow flowers. Produces a fruit that is a long thin vegetable with hard green skin and wet transparent flesh. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Cucumbers are only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Cucumbers grow quite fast, providing little yield but in a short period. They can ber eaten raw.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Cucumber</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawCucumber</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_CucumberImmature</immatureGraphicPath>
+
+			<sowTags>
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>3</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
 		<defName>VCE_ButternutSquash</defName>
-		<label>butternut squah plant</label>
-		<description>.</description>
+		<label>butternut squash plant</label>
+		<description>A vine plant that produces a vegetable with a sweet, nutty taste similar to that of a pumpkin. It has tan-yellow skin and orange fleshy pulp with a compartment of seeds in the blossom end.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Butternut squash is only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Butternut squash takes a long time to grow..</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
@@ -238,13 +427,13 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VCE_RawButternutSquash</harvestedThingDef>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_ButternutSquashImmature</immatureGraphicPath>
-			<harvestYield>11</harvestYield>
+			<harvestYield>25</harvestYield>
 			<fertilityMin>0</fertilityMin>
 			<sowTags>
 				<li>VCE_Sandy</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>5.8</growDays>
+			<growDays>14</growDays>
 			<visualSizeRange>0.3~1.05</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>

@@ -60,7 +60,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>9</maxMeshCount>
-			<harvestedThingDef>VCE_RawSorghum</harvestedThingDef>
+			<harvestedThingDef>VCE_Flour</harvestedThingDef>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_SorghumImmature</immatureGraphicPath>
 			<harvestYield>25</harvestYield>
 			<harvestWork>300</harvestWork>

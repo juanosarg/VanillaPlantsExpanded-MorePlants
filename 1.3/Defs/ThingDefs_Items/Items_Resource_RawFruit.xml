@@ -6,8 +6,7 @@
 		<defName>VCE_RawAvocado</defName>
 		<label>avocados</label>
 		<description>A green or nearly black coloured fruit with a large seed or pit in the center. Avocados have a very mild, creamy texture. Hipsters love them.</description>
-		<soundInteract>Grain_Drop</soundInteract>
-		<soundDrop>Grain_Drop</soundDrop>	
+		
 		<thingCategories>
 			<li>VCE_Fruit</li>
 		</thingCategories>
@@ -31,6 +30,32 @@
 			<tasteThought/>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawMelon</defName>
+		<label>melons</label>
+		<description>A sweet, edible, and fleshy fruit of considerable size. Melons are usually cultivated in warm regions.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Melons</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
 	</ThingDef>
 
 

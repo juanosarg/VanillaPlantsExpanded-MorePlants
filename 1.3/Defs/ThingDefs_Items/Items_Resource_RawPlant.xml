@@ -137,7 +137,7 @@
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawTaro</defName>
 		<label>taro roots</label>
-		<description>.</description>
+		<description>A starchy root vegetable. It has a brown outer skin and white flesh with purple specks throughout. When cooked, it has a mildly sweet taste and a texture similar to potato.</description>
 		<graphicData>
 			<texPath>Things/Items/Raw/VCE_Taro</texPath>
 		</graphicData>
@@ -156,9 +156,93 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawWatercress</defName>
+		<label>watercress leaves</label>
+		<description>A green leaf vegetable rich in vitamins and minerals and from the same family as kale and broccoli.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Watercress</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawLotus</defName>
+		<label>lotus seeds</label>
+		<description>The seeds of the lotus plant. They are packed with nutritional elements which make them an excellent choice for a healthy diet, with a high content of proteins, carbohydrates, and vitamins.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Lotus</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawWaterChestnut</defName>
+		<label>water chestnuts</label>
+		<description>Small, rounded corms with a crisp, white flesh that may be eaten raw, slightly boiled, or grilled.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_WaterChestnuts</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawCucumber</defName>
+		<label>cucumbers</label>
+		<description>A long thin vegetable with hard green skin and wet transparent flesh. Can be eaten raw.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Cucumbers</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawButternutSquash</defName>
 		<label>butternut squashes</label>
-		<description>.</description>
+		<description>A vegetable with a sweet, nutty taste similar to that of a pumpkin. It has tan-yellow skin and orange fleshy pulp with a compartment of seeds in the blossom end.</description>
 		<graphicData>
 			<texPath>Things/Items/Raw/VCE_ButternutSquash</texPath>
 		</graphicData>
@@ -170,7 +254,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>30</daysToRotStart>
+				<daysToRotStart>45</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
