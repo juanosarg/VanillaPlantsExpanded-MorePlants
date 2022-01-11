@@ -440,38 +440,5 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-	<ThingDef ParentName="PlantBase">
-		<defName>VCE_Beans</defName>
-		<label>green bean plant</label>
-		<description>.</description>
-		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Nutrition>0.4</Nutrition>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Crops/VCE_Beans</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<selectable>true</selectable>
-		<pathCost>14</pathCost>
-		<ingestible/>
-		<plant>
-			<fertilityMin>0</fertilityMin>
-			<fertilitySensitivity>0</fertilitySensitivity>
-			<dieIfLeafless>true</dieIfLeafless>
-			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>VCE_RawBeans</harvestedThingDef>
-			<harvestYield>22</harvestYield>
-			<sowTags>
-				<li>VCE_Sandy</li>
-			</sowTags>
-			<topWindExposure>0.1</topWindExposure>
-			<growDays>11.3</growDays>
-			<immatureGraphicPath>Things/Plant/Crops/VCE_BeansImmature</immatureGraphicPath>
-			<visualSizeRange>0.3~1</visualSizeRange>
-			<wildOrder>2</wildOrder>
-			<purpose>Food</purpose>
-			<humanFoodPlant>true</humanFoodPlant>
-		</plant>
-	</ThingDef>
+	
 </Defs>
