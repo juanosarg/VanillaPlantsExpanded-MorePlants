@@ -259,7 +259,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Carrot</defName>
 		<label>carrot plant</label>
-		<description>A herbaceous plant of the Apiaceae family that produces an edible taproot. An erect rosette of doubly compound, finely divided leaves develops above ground, while the edible carrot and attached roots are below.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Companion planting: carrots will grow faster if green beans are cultivated in the same map.</description>
+		<description>A herbaceous plant of the Apiaceae family that produces an edible taproot. An erect rosette of doubly compound, finely divided leaves develops above ground, while the edible carrot and attached roots are below.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Companion planting: carrots will grow faster if green beans are cultivated in the same map (up to 30% faster if 100 are found).</description>
 		<thingClass>VanillaPlantsExpandedMorePlants.Plant_GrowsInTandem</thingClass>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
@@ -294,7 +294,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Beans</defName>
 		<label>green bean plant</label>
-		<description>A herbaceous bush with a long history of cultivation. They are distinguished from the many other varieties of beans in that green beans are harvested and consumed with their enclosing pods, before the bean seeds inside have fully matured, similar to peas.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Companion planting: green beans will grow faster if carrots are cultivated in the same map.</description>
+		<description>A herbaceous bush with a long history of cultivation. They are distinguished from the many other varieties of beans in that green beans are harvested and consumed with their enclosing pods, before the bean seeds inside have fully matured, similar to peas.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Companion planting: green beans will grow faster if carrots are cultivated in the same map (up to 30% faster if 100 are found).</description>
 		<thingClass>VanillaPlantsExpandedMorePlants.Plant_GrowsInTandem</thingClass>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
