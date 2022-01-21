@@ -75,18 +75,18 @@ namespace VanillaPlantsExpandedMorePlants
             {
                 if (this.def == InternalDefOf.VCE_Beans)
                 {
-                    if (carrotsInMap <= 30)
+                    if (carrotsInMap <= 100)
                     {
-                        return 1f + (0.1f * carrotsInMap);
+                        return 1f + (0.003f * carrotsInMap);
                     }
                     else return 1.3f;
                     
                 }
                 else if (this.def == InternalDefOf.VCE_Carrot)
                 {
-                    if (beansInMap <= 30)
+                    if (beansInMap <= 100)
                     {
-                        return 1f + (0.1f * beansInMap);
+                        return 1f + (0.003f * beansInMap);
                     }
                     else return 1.3f;
                 }
