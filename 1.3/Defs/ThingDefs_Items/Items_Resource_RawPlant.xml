@@ -231,6 +231,32 @@
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>    
 	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawChickpeas</defName>
+		<label>chickpeas</label>
+		<description>One of the earliest cultivated legumes. Chickpeas are high in fibre and protein and are a good source of iron, phosphorus, and folic acid.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Chickpeas</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>0.275</MarketValue>
+			<Nutrition>0.0125</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
 
 	
 

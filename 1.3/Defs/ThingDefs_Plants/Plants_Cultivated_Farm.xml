@@ -202,7 +202,7 @@
 		<pathCost>14</pathCost>
 		<ingestible/>
 		<plant>
-			<fertilityMin>1</fertilityMin>
+			<fertilityMin>0.7</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VCE_RawOkra</harvestedThingDef>
@@ -273,7 +273,7 @@
 		<pathCost>14</pathCost>
 		<ingestible/>
 		<plant>
-			<fertilityMin>1</fertilityMin>
+			<fertilityMin>0.7</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
@@ -308,7 +308,7 @@
 		<pathCost>14</pathCost>
 		<ingestible/>
 		<plant>
-			<fertilityMin>1</fertilityMin>
+			<fertilityMin>0.7</fertilityMin>
 			
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
@@ -320,6 +320,41 @@
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Chickpea</defName>
+		<label>chickpea plant</label>
+		<description>One of the earliest cultivated legumes, widely grown for its nutritious seeds. These are high in fibre and protein and are a good source of iron, phosphorus, and folic acid.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Chickpeas grow quite fast and have good yield, but they require a LOT of space to be stored (this may be negated by stack-increasing mods, you dirty cheater, but it's up to you to decide to mess up the game's balance).</description>
+		
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Chickpea</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawChickpeas</harvestedThingDef>
+			<harvestYield>40</harvestYield>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_ChickpeaImmature</immatureGraphicPath>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.7</growDays>
 			<visualSizeRange>0.6~1.2</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
@@ -572,6 +607,8 @@
 			<immatureGraphicPath>Things/Plant/Crops/VCE_ButternutSquashImmature</immatureGraphicPath>
 			<harvestYield>25</harvestYield>
 			<fertilityMin>0</fertilityMin>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
 			<sowTags>
 				<li>VCE_Sandy</li>
 			</sowTags>
@@ -581,6 +618,44 @@
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_AloeVera</defName>
+		<label>aloe vera plant</label>
+		<description>A herb with succulent leaves that are arranged in a rosette. The leaves are grey to green and sometimes have white spots on their surfaces. They have sharp, pinkish spines along their edges and are the source of a colourless gel that is used in many medicinal products.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Aloe vera is only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Aloe vera is a source of herbal medicine.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_AloeVera</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>MedicineHerbal</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_AloeVeraImmature</immatureGraphicPath>
+			<harvestYield>1</harvestYield>
+			 <allowAutoCut>false</allowAutoCut>
+			<fertilityMin>0</fertilityMin>
+			<sowWork>2000</sowWork>
+			<sowMinSkill>10</sowMinSkill>
+			<harvestWork>2000</harvestWork>
+			<sowTags>
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>14</growDays>
+			<visualSizeRange>0.5~0.9</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Health</purpose>
+			
 		</plant>
 	</ThingDef>
 	
