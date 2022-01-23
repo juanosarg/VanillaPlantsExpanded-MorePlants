@@ -310,6 +310,7 @@
     <Compile Include="Harmony\Plant_PlantCollected.cs" />
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Plants\Plant_FasterInTropics.cs" />
+    <Compile Include="Plants\Plant_TransformOnMaturity.cs" />
     <Compile Include="Plants\Plant_GrowsInTandem.cs" />
     <Compile Include="Plants\Plant_Resistant.cs" />
     <Compile Include="Plants\Plant_SowsAdjacent.cs" />
