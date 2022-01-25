@@ -57,6 +57,37 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawPineapple</defName>
+		<label>pineapples</label>
+		<description>A sweet tropical fruit with a tough leathery skin and spiky leaves on top. The word pineapple was first used to mean "pine cone," and the fruit was given this name because of its resemblance to a large pine cone.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Pineapples</texPath>
+
+		</graphicData>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+		</ingestible>    
+	</ThingDef>
 
 
 

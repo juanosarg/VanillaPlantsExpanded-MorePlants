@@ -28,6 +28,35 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawLettuce</defName>
+		<label>lettuce</label>
+		<description>A leaf vegetable commonly eaten fresh and served as the base of green salads. Lettuce is generally a rich source of vitamins K and A.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Lettuce</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>8</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawRadish</defName>
 		<label>radishes</label>
 		<description>An edible root vegetable that is very easy to grow and quick to harvest. Radishes are often planted by novice gardeners.</description>
@@ -219,6 +248,57 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawBellPeppers</defName>
+		<label>red bell peppers</label>
+		<description>Also known as sweet peppers, bell peppers are technically nightshades and part of the capsicum family, but they are the only chili pepper that carries a recessive gene that stops any capsaicin from being made in the fruit, thus making them not spicy.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_BellPeppers</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawYellowBellPeppers</defName>
+		<label>yellow bell peppers</label>
+		<description>Also known as sweet peppers, bell peppers are technically nightshades and part of the capsicum family, but they are the only chili pepper that carries a recessive gene that stops any capsaicin from being made in the fruit, thus making them not spicy.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_YellowBellPeppers</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.06</Nutrition>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">

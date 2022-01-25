@@ -9,6 +9,8 @@
 	
 	<VCE_NotInEquator>Not in equatorial region (in this planet, below {0} latitude). Growing normally.</VCE_NotInEquator>
 	<VCE_InEquator>In equatorial region, growing 30% faster.</VCE_InEquator>
+	
+	<VCE_NeedsShade>This plant needs to grow in shade: outside, but under a roof.</VCE_NeedsShade>
 
 
 

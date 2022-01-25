@@ -34,6 +34,75 @@
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Pineapple</defName>
+		<label>pineapple plant</label>
+		<description>A sweet tropical fruit with a tough leathery skin and spiky leaves on top. The word pineapple was first used to mean "pine cone," and the fruit was given this name because of its resemblance to a large pine cone.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Pineapples have a very long growth period, but they are very nutritive, taking up less space in stockpiles.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Pineapple</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>18</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_PineappleImmature</immatureGraphicPath>
+			<harvestedThingDef>VCE_RawPineapple</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>20</growDays>
+			<visualSizeRange>0.7~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Lettuce</defName>
+		<label>lettuce plant</label>
+		<description>A leaf vegetable commonly eaten fresh and served as the base of green salads. Lettuce is generally a rich source of vitamins K and A.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Lettuce can be eaten raw like strawberries, but needs to be grown in shade: outside, but under roof. It won't grow inside.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_NeedsOutside</thingClass>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Lettuce</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawLettuce</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_LettuceImmature</immatureGraphicPath>
+			<harvestYield>8</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.2</growDays>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Radish</defName>
 		<label>radish plant</label>
 		<description>An edible root vegetable that is very easy to grow and quick to harvest. Radishes are often planted by novice gardeners.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This genetically modified radish has a very short growth period (less than 2 days). This means it is an effective crop if you need small amounts of food FAST, and the sowing and harvesting work will be the most important factor.</description>
@@ -353,6 +422,72 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.7</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_BellPepper</defName>
+		<label>bell pepper plant</label>
+		<description>Also known as sweet peppers, bell peppers are technically nightshades and part of the capsicum family, but they are the only chili pepper that carries a recessive gene that stops any capsaicin from being made in the fruit, thus making them not spicy.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; On average, 25% of bell peppers will mature into yellow peppers, while 75% will mature into red peppers. The former are more nutritive. If planted in large numbers this results in increased average yield.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_TransformOnMaturity</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.17</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_BellPepper</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestMinGrowth>0.9</harvestMinGrowth>
+			<harvestedThingDef>VCE_RawBellPeppers</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BellPepperImmature</immatureGraphicPath>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.7</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_YellowBellPepper</defName>
+		<label>bell pepper plant</label>
+		<description>Also known as sweet peppers, bell peppers are technically nightshades and part of the capsicum family, but they are the only chili pepper that carries a recessive gene that stops any capsaicin from being made in the fruit, thus making them not spicy.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; On average, 25% of bell peppers will mature into yellow peppers, while 75% will mature into red peppers. The former are more nutritive. If planted in large numbers this results in increased average yield.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_TransformOnMaturity</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.17</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_YellowBellPepper</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawYellowBellPeppers</harvestedThingDef>
+			<harvestYield>11</harvestYield>
+			<harvestMinGrowth>0.9</harvestMinGrowth>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>4.7</growDays>
 			<visualSizeRange>0.6~1.2</visualSizeRange>

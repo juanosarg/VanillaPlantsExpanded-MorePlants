@@ -9,7 +9,7 @@ namespace VanillaPlantsExpandedMorePlants
     {
 
         public int tickCounter = 0;      
-        public const int tickInterval = 4;
+        public const int tickInterval = 1;
         public bool checkOnlyOnce = false;
 
 
@@ -22,13 +22,21 @@ namespace VanillaPlantsExpandedMorePlants
 
                 if (tickCounter >= tickInterval)
                 {
-                    if (HarvestableNow)
+                    if (HarvestableNow && this.Map!=null)
                     {
                         System.Random rand = new System.Random();
 
                         if (rand.NextDouble() < 0.25)
                         {
-
+                            Thing thing = ThingMaker.MakeThing(InternalDefOf.VCE_YellowBellPepper);
+                            IntVec3 pos = this.Position;
+                            Map map = this.Map;
+                            thing.stackCount = 1;
+                            Plant plant = thing as Plant;
+                            plant.Growth = 1;
+                            this.Destroy();
+                            GenPlace.TryPlaceThing(thing, pos, map, ThingPlaceMode.Direct);
+                            
                         }
 
                         checkOnlyOnce = true;
