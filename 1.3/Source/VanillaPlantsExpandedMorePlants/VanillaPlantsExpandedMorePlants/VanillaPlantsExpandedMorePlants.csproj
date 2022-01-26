@@ -311,6 +311,7 @@
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Plants\Plant_NeedsOutside.cs" />
     <Compile Include="Plants\Plant_FasterInTropics.cs" />
+    <Compile Include="Plants\Plant_BenefitsFromApiary.cs" />
     <Compile Include="Plants\Plant_TransformOnMaturity.cs" />
     <Compile Include="Plants\Plant_GrowsInTandem.cs" />
     <Compile Include="Plants\Plant_Resistant.cs" />

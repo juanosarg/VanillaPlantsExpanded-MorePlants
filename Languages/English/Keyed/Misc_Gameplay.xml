@@ -11,6 +11,9 @@
 	<VCE_InEquator>In equatorial region, growing 30% faster.</VCE_InEquator>
 	
 	<VCE_NeedsShade>This plant needs to grow in shade: outside, but under a roof.</VCE_NeedsShade>
+	
+	<VCE_Pollinated>Apiary found nearby</VCE_Pollinated>
+	<VCE_NotPollinated>No apiary found in a 6 tiles radius (calculated on sowing)</VCE_NotPollinated>
 
 
 
