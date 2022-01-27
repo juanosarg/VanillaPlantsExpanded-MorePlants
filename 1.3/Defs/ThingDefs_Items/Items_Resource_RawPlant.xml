@@ -237,6 +237,56 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawBrusselsSprouts</defName>
+		<label>brussels sprouts</label>
+		<description>A form of cabbage grown for its edible buds called "sprouts". Brussels sprouts usually are eaten cooked, and the small young sprouts have a more delicate flavour than older ones.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_BrusselsSprouts</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawCassava</defName>
+		<label>cassavas</label>
+		<description>A tuberous edible plant also called manioc, mandioca, or yuca. They have a mild nutty taste and are commonly eaten as root vegetables in stews or as side dishes. Cassava roots are a versatile vegetable that can be used to produce flour, breads, tapioca, a laundry starch, and an alcoholic beverage.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Cassavas</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawBeans</defName>
 		<label>green beans</label>
 		<description>Young, unripe fruits of a cultivar of the common bean. They can be steamed, boiled, stir-fried, or baked. They are commonly cooked in other dishes such as soups, stews, and casseroles. Green beans can also be pickled, much like cucumbers are.</description>

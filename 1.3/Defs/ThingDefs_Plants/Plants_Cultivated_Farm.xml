@@ -103,6 +103,76 @@
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantBase">
+		<defName>VCE_BrusselsSprout</defName>
+		<label>brussels sprout plant</label>
+		<description>A form of cabbage grown for its edible buds called "sprouts". Brussels sprouts usually are eaten cooked, and the small young sprouts have a more delicate flavour than older ones.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, brussels sprouts thrive in snow, and receive a considerable boost to growth if snowing, AS LONG AS it is also growth season (they won't grow or be able to be planted otherwise). They won't die due to cold.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_AffectedBySnow</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_BrusselsSprout</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawBrusselsSprouts</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BrusselsSproutImmature</immatureGraphicPath>
+			<harvestYield>12</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>7</growDays>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Cassava</defName>
+		<label>cassava plant</label>
+		<description>A tuberous edible plant also called manioc, mandioca, or yuca. They have a mild nutty taste and are commonly eaten as root vegetables in stews or as side dishes. Cassava roots are a versatile vegetable that can be used to produce flour, breads, tapioca, a laundry starch, and an alcoholic beverage.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Cassava grows best in tropical, warm and humid climates. As such, it will receive a considerable growth bonus if the weather is foggy.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_AffectedByFog</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Cassava</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawCassava</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_CassavaImmature</immatureGraphicPath>
+			<harvestYield>9</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.8</growDays>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Radish</defName>
 		<label>radish plant</label>
 		<description>An edible root vegetable that is very easy to grow and quick to harvest. Radishes are often planted by novice gardeners.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This genetically modified radish has a very short growth period (less than 2 days). This means it is an effective crop if you need small amounts of food FAST, and the sowing and harvesting work will be the most important factor.</description>

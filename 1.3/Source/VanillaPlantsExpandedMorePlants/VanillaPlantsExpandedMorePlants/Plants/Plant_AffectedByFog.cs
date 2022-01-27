@@ -34,7 +34,7 @@ namespace VanillaPlantsExpandedMorePlants
             {
                 if (this.Map.weatherManager.curWeather.defName.Contains("fog")|| this.Map.weatherManager.curWeather.defName.Contains("Fog"))
                 {
-                    return 1.5f;
+                    return 1.3f;
                 }
                 else return 1f;
             }
