@@ -2,42 +2,14 @@
 <Defs>  
 
 
-	<ThingDef ParentName="VCE_FruitFoodRawBase">
-		<defName>VCE_RawAvocado</defName>
-		<label>avocados</label>
-		<description>A green or nearly black coloured fruit with a large seed or pit in the center. Avocados have a very mild, creamy texture. Hipsters love them.</description>
-		
-		<thingCategories>
-			<li>VCE_Fruit</li>
-		</thingCategories>
-		<graphicData>
 
-			<texPath>Things/Items/Raw/VCE_Avocados</texPath>
-
-		</graphicData>
-		<statBases>
-			<MarketValue>1.2</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>5</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-
-		<ingestible>
-			<preferability>RawTasty</preferability>
-			<tasteThought/>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>    
-	</ThingDef>
 	
 	<ThingDef ParentName="VCE_FruitFoodRawBase">
-		<defName>VCE_RawMelon</defName>
-		<label>melons</label>
-		<description>A sweet, edible, and fleshy fruit of considerable size. Melons are usually cultivated in warm regions.</description>
+		<defName>VCE_RawBlueberries</defName>
+		<label>blueberries</label>
+		<description>A sweet, edible fruit hailed as a "superfood", blueberries are commonly eaten fresh as a dessert fruit and can be baked in a variety of pastries.</description>
 		<graphicData>
-			<texPath>Things/Items/Raw/VCE_Melons</texPath>
+			<texPath>Things/Items/Raw/VCE_Blueberries</texPath>
 		</graphicData>
 		<thingCategories>
 			<li>VCE_Fruit</li>
@@ -52,44 +24,13 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>30</daysToRotStart>
+				<daysToRotStart>5</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="VCE_FruitFoodRawBase">
-		<defName>VCE_RawPineapple</defName>
-		<label>pineapples</label>
-		<description>A sweet tropical fruit with a tough leathery skin and spiky leaves on top. The word pineapple was first used to mean "pine cone," and the fruit was given this name because of its resemblance to a large pine cone.</description>
-		
-		<graphicData>
-
-			<texPath>Things/Items/Raw/VCE_Pineapples</texPath>
-
-		</graphicData>
-		<thingCategories>
-			<li>VCE_Fruit</li>
-		</thingCategories>
-		<statBases>
-			<MarketValue>4</MarketValue>
-			<Nutrition>0.2</Nutrition>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>15</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-			<preferability>RawTasty</preferability>
-			<tasteThought/>
-		</ingestible>    
-	</ThingDef>
-
-
+	
 
 
 </Defs>
