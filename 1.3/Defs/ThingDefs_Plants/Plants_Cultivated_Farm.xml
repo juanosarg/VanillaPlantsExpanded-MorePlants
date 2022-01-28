@@ -172,6 +172,42 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_SweetPotato</defName>
+		<label>sweet potato plant</label>
+		<description>A plant with large, starchy, sweet-tasting (tasting similar to pumpkin), tuberous roots that are used as a root vegetable. The sweet potato is distantly related to the common potato.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Sweet potatoes show a marked preference for rocky soils, flourishing on them. Rich soils are actually detrimental to them. They do not tolerate frost, growing best at an average temperature of 24 °C, and receinving penalties under 20ºC.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_PrefersRockyAndNoFrost</thingClass>
+		<statBases>
+			<MaxHitPoints>55</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_SweetPotato</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawSweetPotatoes</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_SweetPotatoImmature</immatureGraphicPath>
+			<harvestYield>10</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.8</growDays>
+			<visualSizeRange>0.5~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Radish</defName>
 		<label>radish plant</label>
@@ -792,7 +828,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_ButternutSquash</defName>
 		<label>butternut squash plant</label>
-		<description>A vine plant that produces a vegetable with a sweet, nutty taste similar to that of a pumpkin. It has tan-yellow skin and orange fleshy pulp with a compartment of seeds in the blossom end.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Butternut squash is only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Butternut squash takes a long time to grow..</description>
+		<description>A vine plant that produces a vegetable with a sweet, nutty taste similar to that of a pumpkin. It has tan-yellow skin and orange fleshy pulp with a compartment of seeds in the blossom end.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Butternut squash is only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Butternut squash takes a long time to grow.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
@@ -819,7 +855,7 @@
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>14</growDays>
-			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<visualSizeRange>0.6~1.25</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>

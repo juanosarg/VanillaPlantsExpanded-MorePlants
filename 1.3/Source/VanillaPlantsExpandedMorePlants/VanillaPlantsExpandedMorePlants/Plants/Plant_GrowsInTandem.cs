@@ -94,6 +94,23 @@ namespace VanillaPlantsExpandedMorePlants
             }
         }
 
+        public override string GetInspectString()
+        {
+            if (this.def == InternalDefOf.VCE_Beans)
+            {
+                return base.GetInspectString() + "\n" + "VCE_CarrotsNearby".Translate(carrotsInMap);
+
+            }
+            else if (this.def == InternalDefOf.VCE_Carrot)
+            {
+                return base.GetInspectString() + "\n" + "VCE_BeansNearby".Translate(beansInMap);
+
+            }
+            else return base.GetInspectString();
+
+
+        }
+
 
 
     }

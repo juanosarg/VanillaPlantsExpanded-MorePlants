@@ -77,5 +77,45 @@
 			
 		</plant>
 	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Rye</defName>
+		<label>rye plant</label>
+		<description>A plant that grows well in much poorer soils than those necessary for most cereal grains. Thus, it is an especially valuable crop in regions where the soil has sand or peat. It has been genetically engineered to gently break into flour with a mere touch.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Rye is only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Rye needs to be grown away from large bodies of water (water within 10 tiles of it will stop its growth).</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_NoWaterNearby</thingClass>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Nutrition>0.18</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Rye</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>40</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>VCE_Flour</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_RyeImmature</immatureGraphicPath>
+			<sowMinSkill>7</sowMinSkill>
+			<harvestYield>20</harvestYield>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<topWindExposure>0.2</topWindExposure>
+			<growDays>15</growDays>			
+			<visualSizeRange>0.8~2</visualSizeRange>			
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
 
 </Defs>

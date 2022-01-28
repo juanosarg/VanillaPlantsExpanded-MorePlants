@@ -262,6 +262,56 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawOlives</defName>
+		<label>olives</label>
+		<description>A small, egg-shaped black or green fruit that is used as food or for making oil. Olives freshly picked from the tree contain oleuropein, which makes the fruit unpalatable for immediate consumption. They must be brined or fermented to be used.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Olives</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawSweetPotatoes</defName>
+		<label>sweet potatoes</label>
+		<description>Large, starchy, sweet-tasting (tasting similar to pumpkin), tuberous roots that are used as a root vegetable. The sweet potato is distantly related to the common potato.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_SweetPotatoes</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawCassava</defName>
 		<label>cassavas</label>
 		<description>A tuberous edible plant also called manioc, mandioca, or yuca. They have a mild nutty taste and are commonly eaten as root vegetables in stews or as side dishes. Cassava roots are a versatile vegetable that can be used to produce flour, breads, tapioca, a laundry starch, and an alcoholic beverage.</description>

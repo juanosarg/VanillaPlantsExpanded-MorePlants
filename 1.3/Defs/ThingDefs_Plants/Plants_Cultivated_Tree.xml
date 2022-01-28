@@ -20,6 +20,7 @@
 		<selectable>true</selectable>
 		<statBases>
 			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
 			<Nutrition>1.25</Nutrition>
 		</statBases>
 		<ingestible />
@@ -39,6 +40,48 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestYield>175</harvestYield>
 			<harvestedThingDef>VCE_RawAvocado</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>VCE_OliveTree</defName>
+		<label>olive tree</label>
+		<description>A subtropical broad-leaved evergreen tree. Its leaves, leathery and lance-shaped, are dark green above and silvery on the underside and are paired opposite each other on the twig. The wood is resistant to decay. If the top dies back, a new trunk will often arise from the roots.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Interestingly, olive trees show a marked preference for rocky soils, flourishing on them. Rich soils are actually detrimental to them. They will also live for a very, very long time, far longer than other produce trees. Contrary to other tree produce, olives can't be eaten raw.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_PrefersRocky</thingClass>
+		<graphicData>		
+			<texPath>Things/Plant/Trees/VCE_TreeOlive</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<lifespanDaysPerGrowDays>36</lifespanDaysPerGrowDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>28</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowMinSkill>6</sowMinSkill>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.7</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<immatureGraphicPath>Things/Plant/Trees/VCE_TreeOliveImmature</immatureGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>50</harvestYield>
+			<harvestedThingDef>VCE_RawOlives</harvestedThingDef>
 			<harvestFailable>true</harvestFailable>
 			<harvestAfterGrowth>0.20</harvestAfterGrowth>
 		</plant>

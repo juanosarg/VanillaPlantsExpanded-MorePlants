@@ -307,6 +307,7 @@
     <Compile Include="Designators\Designator_AquaticGrowingZone.cs" />
     <Compile Include="Designators\Designator_AquaticGrowingZone_Expand.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\HaulAIUtility_HaulablePlaceValidator.cs" />
     <Compile Include="Harmony\Plant_PlantCollected.cs" />
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Plants\Plant_AffectedBySnow.cs" />
@@ -314,6 +315,9 @@
     <Compile Include="Plants\Plant_NeedsOutside.cs" />
     <Compile Include="Plants\Plant_FasterInTropics.cs" />
     <Compile Include="Plants\Plant_BenefitsFromApiary.cs" />
+    <Compile Include="Plants\Plant_NoWaterNearby.cs" />
+    <Compile Include="Plants\Plant_PrefersRockyAndNoFrost.cs" />
+    <Compile Include="Plants\Plant_PrefersRocky.cs" />
     <Compile Include="Plants\Plant_TransformOnMaturity.cs" />
     <Compile Include="Plants\Plant_GrowsInTandem.cs" />
     <Compile Include="Plants\Plant_Resistant.cs" />
