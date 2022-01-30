@@ -178,7 +178,7 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>VCE_MangoTree</defName>
 		<label>mango tree</label>
-		<description>A deciduous tree cultivated for its fruit, almonds. The sweet almond can be eaten plain or be used as ingredient in desserts and confectioneries. The trees are strikingly beautiful when in flower; they produce fragrant, five-petaled, light pink to white flowers.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.\n\nAlmond trees are beautiful, but they require water to be present in a 6 tile radius to grow properly. Almonds can be used as fruits or processed into milk.</description>
+		<description>A tropical evergreen tree cultivated for its fruit, almonds. The sweet almond can be eaten plain or be used as ingredient in desserts and confectioneries. The trees are strikingly beautiful when in flower; they produce fragrant, five-petaled, light pink to white flowers.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.\n\nAlmond trees are beautiful, but they require water to be present in a 6 tile radius to grow properly. Almonds can be used as fruits or processed into milk.</description>
 		
 		<graphicData>
 			<texPath>Things/Plant/Trees/VCE_MangoTree</texPath>
