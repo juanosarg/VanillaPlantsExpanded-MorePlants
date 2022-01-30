@@ -38,7 +38,7 @@
 			<immatureGraphicPath>Things/Plant/Trees/VCE_TreeAvocadoImmature</immatureGraphicPath>
 			<harvestWork>800</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestYield>175</harvestYield>
+			<harvestYield>160</harvestYield>
 			<harvestedThingDef>VCE_RawAvocado</harvestedThingDef>
 			<harvestFailable>true</harvestFailable>
 			<harvestAfterGrowth>0.20</harvestAfterGrowth>
@@ -80,12 +80,144 @@
 			<immatureGraphicPath>Things/Plant/Trees/VCE_TreeOliveImmature</immatureGraphicPath>
 			<harvestWork>800</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestYield>50</harvestYield>
+			<harvestYield>42</harvestYield>
 			<harvestedThingDef>VCE_RawOlives</harvestedThingDef>
 			<harvestFailable>true</harvestFailable>
 			<harvestAfterGrowth>0.20</harvestAfterGrowth>
 		</plant>
 	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>VCE_CoconutPalm</defName>
+		<label>coconut palm</label>
+		<description>A palm tree cultivated extensively in tropical areas for its edible fruit, the coconut. Coconut palms flourish best close to the sea on low-lying areas a few feet above high water.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.\n\nCoconut palms are only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space.\n\nCoconut palms receive a growth bonus if sea water tiles are found in a 6 tile radius. Coconuts can be used as fruits or processed into milk.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_ChecksSea</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/Trees/VCE_TreeCoconut</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<topWindExposure>0.05</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/Trees/VCE_TreeCoconutImmature</immatureGraphicPath>
+			<sowWork>8000</sowWork>
+			<harvestWork>2000</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>50</harvestYield>
+			<harvestedThingDef>VCE_RawCoconut</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>VCE_AlmondTree</defName>
+		<label>almond tree</label>
+		<description>A deciduous tree cultivated for its fruit, almonds. The sweet almond can be eaten plain or be used as ingredient in desserts and confectioneries. The trees are strikingly beautiful when in flower; they produce fragrant, five-petaled, light pink to white flowers.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.\n\nAlmond trees are beautiful, but they require water to be present in a 6 tile radius to grow properly. Almonds can be used as fruits or processed into milk.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_WaterNearby</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/Trees/VCE_AlmondTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.7</fertilityMin>
+			
+			<topWindExposure>0.05</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/Trees/VCE_AlmondTreeImmature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees/VCE_AlmondTreeLeafless</leaflessGraphicPath>
+			
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>50</harvestYield>
+			<harvestedThingDef>VCE_Almonds</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>VCE_MangoTree</defName>
+		<label>mango tree</label>
+		<description>A deciduous tree cultivated for its fruit, almonds. The sweet almond can be eaten plain or be used as ingredient in desserts and confectioneries. The trees are strikingly beautiful when in flower; they produce fragrant, five-petaled, light pink to white flowers.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.\n\nAlmond trees are beautiful, but they require water to be present in a 6 tile radius to grow properly. Almonds can be used as fruits or processed into milk.</description>
+		
+		<graphicData>
+			<texPath>Things/Plant/Trees/VCE_MangoTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>28</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.7</fertilityMin>
+			
+			<topWindExposure>0.05</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/Trees/VCE_MangoTreeImmature</immatureGraphicPath>
+			
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>48</harvestYield>
+			<harvestedThingDef>VCE_Mangoes</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+
 
 
 

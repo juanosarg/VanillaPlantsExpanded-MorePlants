@@ -312,9 +312,11 @@
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Plants\Plant_AffectedBySnow.cs" />
     <Compile Include="Plants\Plant_AffectedByFog.cs" />
+    <Compile Include="Plants\Plant_ChecksSea.cs" />
     <Compile Include="Plants\Plant_NeedsOutside.cs" />
     <Compile Include="Plants\Plant_FasterInTropics.cs" />
     <Compile Include="Plants\Plant_BenefitsFromApiary.cs" />
+    <Compile Include="Plants\Plant_WaterNearby.cs" />
     <Compile Include="Plants\Plant_NoWaterNearby.cs" />
     <Compile Include="Plants\Plant_PrefersRockyAndNoFrost.cs" />
     <Compile Include="Plants\Plant_PrefersRocky.cs" />

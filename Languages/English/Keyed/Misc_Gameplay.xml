@@ -22,6 +22,10 @@
 	<VCE_StoppedGrowthFertility>Growth impossible due to too fertile terrain</VCE_StoppedGrowthFertility>
 	
 	<VCE_WaterNearby>A body of water nearby is impeding this plant's growth</VCE_WaterNearby>
+	<VCE_NoWaterNearby>Lack of a body of water nearby is impeding this plant's growth</VCE_NoWaterNearby>
+	
+	<VCE_NoSeaTilesNearby>Too far away from the sea, no extra growth bonus</VCE_NoSeaTilesNearby>
+	<VCE_SeaTilesNearby>{0} sea tiles nearby, providing {0}% growth bonus</VCE_SeaTilesNearby>
 
 
 </LanguageData>
