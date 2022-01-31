@@ -79,7 +79,7 @@ namespace VanillaPlantsExpandedMorePlants
         {
             if (GrowthRateFactor_Sea == 1f)
             {
-                return base.GetInspectString() + "\n" + "VCE_NoSeaNearby".Translate();
+                return base.GetInspectString() + "\n" + "VCE_NoSeaTilesNearby".Translate();
 
             }
             else

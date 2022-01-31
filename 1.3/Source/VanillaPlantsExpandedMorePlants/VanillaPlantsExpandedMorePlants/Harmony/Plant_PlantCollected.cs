@@ -40,13 +40,39 @@ namespace VanillaPlantsExpandedMorePlants
                         }
                         GenPlace.TryPlaceThing(thing, by.Position, by.Map, ThingPlaceMode.Near);
                     }
+                  
+                }
+      
+            }
+            if (__instance.def.defName == "VCE_Oats")
+            {
+
+                float statValue = by.GetStatValue(StatDefOf.PlantHarvestYield);
+                if (!(by.RaceProps.Humanlike && !__instance.Blighted && Rand.Value > statValue))
+                {
+
+                    int num = 15;
+                    if (statValue > 1f)
+                    {
+                        num = GenMath.RoundRandom((float)num * statValue);
+                    }
+                    if (num > 0)
+                    {
+                        Thing thing = ThingMaker.MakeThing(ThingDef.Named("VCE_RawOats"));
+                        thing.stackCount = num;
+                        if (by.Faction != Faction.OfPlayer)
+                        {
+                            thing.SetForbidden(value: true);
+                        }
+                        GenPlace.TryPlaceThing(thing, by.Position, by.Map, ThingPlaceMode.Near);
+                    }
 
 
-                   
+
                 }
 
 
-               
+
             }
 
         }
