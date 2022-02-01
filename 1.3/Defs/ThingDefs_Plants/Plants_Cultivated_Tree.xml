@@ -113,7 +113,7 @@
 			<growDays>32.51</growDays>
 			<visualSizeRange>0.8~2.0</visualSizeRange>
 			<sowMinSkill>8</sowMinSkill>
-			<sowTags>
+			<sowTags Inherit="False">
 				<li>VCE_Sandy</li>
 			</sowTags>
 			<fertilityMin>0</fertilityMin>
