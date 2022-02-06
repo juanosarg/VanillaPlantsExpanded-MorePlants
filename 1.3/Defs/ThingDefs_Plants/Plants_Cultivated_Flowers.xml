@@ -25,6 +25,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>1</maxMeshCount>
+			<sowMinSkill>6</sowMinSkill>
 			<harvestedThingDef>VCE_RawCanola</harvestedThingDef>
 			<harvestYield>10</harvestYield>
 			<harvestWork>300</harvestWork>

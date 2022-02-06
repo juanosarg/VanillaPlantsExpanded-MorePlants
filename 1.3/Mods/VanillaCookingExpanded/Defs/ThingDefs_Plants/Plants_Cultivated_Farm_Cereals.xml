@@ -63,6 +63,7 @@
 			<harvestedThingDef>VCE_Flour</harvestedThingDef>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_SorghumImmature</immatureGraphicPath>
 			<harvestYield>25</harvestYield>
+			<sowMinSkill>7</sowMinSkill>
 			<harvestWork>300</harvestWork>
 			<sowTags>
 				<li>Ground</li>

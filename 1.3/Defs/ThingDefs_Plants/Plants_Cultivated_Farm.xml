@@ -22,6 +22,7 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VCE_RawCelery</harvestedThingDef>
 			<harvestYield>62</harvestYield>
+			<sowMinSkill>6</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
@@ -92,6 +93,7 @@
 			<harvestYield>8</harvestYield>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>4.2</growDays>
@@ -127,6 +129,7 @@
 			<harvestYield>12</harvestYield>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>7</growDays>
@@ -162,6 +165,7 @@
 			<harvestYield>9</harvestYield>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>4.8</growDays>
@@ -230,6 +234,7 @@
 			<harvestedThingDef>VCE_RawRadish</harvestedThingDef>
 			<harvestYield>3</harvestYield>
 			<sowWork>340</sowWork>
+			<sowMinSkill>6</sowMinSkill>
 			<maxMeshCount>4</maxMeshCount>
 			<sowTags>
 				<li>Ground</li>
@@ -307,7 +312,7 @@
 			<harvestedThingDef>VCE_RawPeanut</harvestedThingDef>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_PeanutImmature</immatureGraphicPath>
 			<harvestYield>12</harvestYield>
-			<harvestWork>300</harvestWork>
+			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
@@ -349,6 +354,7 @@
 			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			
 			<topWindExposure>0.1</topWindExposure>
@@ -385,6 +391,7 @@
 			<immatureGraphicPath>Things/Plant/Crops/VCE_OkraImmature</immatureGraphicPath>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>7.2</growDays>
@@ -421,6 +428,7 @@
 			<maxMeshCount>4</maxMeshCount>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6</growDays>
@@ -457,6 +465,7 @@
 			
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6</growDays>
@@ -492,6 +501,7 @@
 			<immatureGraphicPath>Things/Plant/Crops/VCE_BeansImmature</immatureGraphicPath>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6</growDays>
@@ -527,6 +537,7 @@
 			<immatureGraphicPath>Things/Plant/Crops/VCE_ChickpeaImmature</immatureGraphicPath>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>4.7</growDays>
@@ -562,6 +573,7 @@
 			<immatureGraphicPath>Things/Plant/Crops/VCE_BellPepperImmature</immatureGraphicPath>
 			<sowTags>
 				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>4.7</growDays>
@@ -778,6 +790,7 @@
 				<li>VCE_Sandy</li>
 
 			</sowTags>
+			<blockAdjacentSow>true</blockAdjacentSow>
 			<harvestFailable>false</harvestFailable>
 			<topWindExposure>0</topWindExposure>
 			<growDays>10.4</growDays>
