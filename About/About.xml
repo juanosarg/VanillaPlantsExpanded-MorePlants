@@ -28,6 +28,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>VanillaExpanded.VPlantsE</li>
 	</loadAfter>
 
 	<packageId>VanillaExpanded.VPlantsEMore</packageId>
