@@ -308,7 +308,6 @@
     <Compile Include="Designators\Designator_AquaticGrowingZone_Expand.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\HaulAIUtility_HaulablePlaceValidator.cs" />
-    <Compile Include="Harmony\Plant_PlantCollected.cs" />
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Plants\Plant_AffectedBySnow.cs" />
     <Compile Include="Plants\Plant_AffectedByFog.cs" />

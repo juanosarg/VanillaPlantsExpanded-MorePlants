@@ -36,6 +36,12 @@
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 		</plant>
+		<modExtensions>
+			<li Class="VanillaPlantsExpanded.DualCropExtension">
+				<secondaryOutput>Hay</secondaryOutput>
+				<outPutAmount>20</outPutAmount>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
@@ -157,6 +163,12 @@
 			<purpose>Food</purpose>
 			
 		</plant>
+		<modExtensions>
+			<li Class="VanillaPlantsExpanded.DualCropExtension">
+				<secondaryOutput>VCE_RawOats</secondaryOutput>
+				<outPutAmount>15</outPutAmount>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 
