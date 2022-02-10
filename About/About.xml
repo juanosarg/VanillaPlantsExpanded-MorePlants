@@ -33,7 +33,24 @@
 
 	<packageId>VanillaExpanded.VPlantsEMore</packageId>
 
-	<description>For beta testing purposes
+	<description>Vanilla Plants Expanded - More Plants is an add-on module for Vanilla Plants Expanded from the Vanilla Expanded team. This mod adds a variety of fruit plants and crops to spice up your fields even further, with each prop adding something different and unique, allowing you to use the power of farming differently based on your situation and needs.
 
-	</description>
+Two new unique types of growing zone have been added: sandy and aquatic growing zones. These add new crops each, that can only be grown on them. They ignore fertility, but their crops will take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space.
+
+Finally, by researching vegetable milk production, you can turn rice, coconuts, almonds, oats (with VE Cooking) and Soybeans (with VE Sushi) into milk. This is inefficient, and useful if a recipe NEEDS base game milk. It is not a way to work around Fine meals needing meat or animal products.</description>
 </ModMetaData>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
