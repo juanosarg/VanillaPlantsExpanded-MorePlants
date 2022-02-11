@@ -11,6 +11,9 @@
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
     <workAmount>2000</workAmount>
+	<recipeUsers>
+				<li>BiofuelRefinery</li>	  
+		</recipeUsers>	
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <ingredients>
       <li>
