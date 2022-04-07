@@ -706,7 +706,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VCE_RawLotus</harvestedThingDef>
-			<harvestYield>6</harvestYield>
+			<harvestYield>35</harvestYield>
 			<fertilityMin>0</fertilityMin>
 			
 			<sowWork>1000</sowWork>
@@ -716,7 +716,7 @@
 				<li>VCE_Aquatic</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
-			<growDays>3</growDays>
+			<growDays>18</growDays>
 			<visualSizeRange>0.5~1.2</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
