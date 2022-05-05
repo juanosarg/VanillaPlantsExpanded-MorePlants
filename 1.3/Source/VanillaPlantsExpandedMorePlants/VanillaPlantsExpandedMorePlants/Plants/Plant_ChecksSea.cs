@@ -62,8 +62,11 @@ namespace VanillaPlantsExpandedMorePlants
         {
             get
             {
-
-                return 1f + (0.01f * numberOfSea);
+                float rate = 1f + (0.01f * numberOfSea);
+                if (rate > 1.3)
+                {
+                    return 1.3f;
+                }else return 1f + (0.01f * numberOfSea);
             }
         }
 

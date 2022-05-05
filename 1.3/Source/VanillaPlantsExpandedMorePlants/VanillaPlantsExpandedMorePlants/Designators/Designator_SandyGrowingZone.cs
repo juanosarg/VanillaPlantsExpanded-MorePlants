@@ -18,7 +18,7 @@ namespace VanillaPlantsExpandedMorePlants
         public Designator_SandyGrowingZone()
         {
            
-            this.zoneTypeToPlace = typeof(Zone_GrowingAquatic);
+            this.zoneTypeToPlace = typeof(Zone_GrowingSandy);
             this.defaultLabel = "VCE_SandyGrowingZone".Translate();
             this.defaultDesc = "VCE_SandyGrowingZoneDesc".Translate();
             this.icon = ContentFinder<Texture2D>.Get("UI/Designators/VCE_ZoneCreate_Sandy", true);
