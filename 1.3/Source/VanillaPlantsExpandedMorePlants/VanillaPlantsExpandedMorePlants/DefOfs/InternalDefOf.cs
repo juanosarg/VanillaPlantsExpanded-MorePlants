@@ -12,6 +12,8 @@ namespace VanillaPlantsExpandedMorePlants
 		public static ThingDef VCE_Carrot;
 		public static ThingDef VCE_Beans;
 		public static ThingDef VCE_YellowBellPepper;
+		public static ThingDef VCE_PeanutSecondary;
+		public static ThingDef VCE_Peanut;
 
 
 

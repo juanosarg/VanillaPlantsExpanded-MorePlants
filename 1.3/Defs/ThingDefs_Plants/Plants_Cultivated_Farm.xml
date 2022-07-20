@@ -326,6 +326,41 @@
 		</plant>
 	</ThingDef>
 	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_PeanutSecondary</defName>
+		<label>secondary peanut plant</label>
+		<description>A plant that produces seeds with an oblong shape and a papery seed coat. Similar in taste and nutritional profile to tree nuts such as walnuts and almonds, but technically a legume.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This genetically modified variety of peanuts is sown by throwing the seeds haphazardly on the growing zone, and as such the plants will automatically be planted in the adjacent tiles 75% of the time, reducing the total amount of sowing work needed. Useful!</description>
+		
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Peanut</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>0.50</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>9</maxMeshCount>
+			<harvestedThingDef>VCE_RawPeanut</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_PeanutImmature</immatureGraphicPath>
+			<harvestYield>12</harvestYield>
+			<harvestWork>200</harvestWork>			
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6.25</growDays>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
 	
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Sunflower</defName>
